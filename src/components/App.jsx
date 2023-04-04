@@ -4,13 +4,15 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Note from "./Note";
 
+import notes from "../notes";
+
 function App() {
   return (
     <div>
       <Header />
-      <Note title="First Note" content="This was the first Note ever!"/>
-      <Note title="Second Note" content="Now there's two of them!"/>
-      <Note title="Note #3" content="Third time's the charm!"/>
+      {notes.map((note) => {
+        return <Note key={note.key} title={note.title} content={note.content}/>;
+      })}
       <Footer />
     </div>
   );
