@@ -1,7 +1,8 @@
 import React from "react";
 
+const name = "Emiliano Gusberti";
+
 function Footer() {
-  const name = "Emiliano Gusberti";
   const currentYear = new Date().getFullYear();
 
   return (
