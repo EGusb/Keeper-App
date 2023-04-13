@@ -8,6 +8,7 @@ html {
 }
 body {
   background: #121212;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
   padding: 0 16px;
 }
 
@@ -36,10 +37,10 @@ footer p {
   color: rgb(138, 137, 137);
 }
 .note {
-  background: rgb(29, 29, 29);
   color: rgb(241, 243, 244);
+  background: rgb(29, 29, 29);
   border-radius: 7px;
-  box-shadow: 0 1px 5px rgb(138, 137, 137);
+  box-shadow: 0 2px 5px #ccc;
   padding: 10px;
   width: 240px;
   margin: 16px;
@@ -60,6 +61,7 @@ footer p {
   position: relative;
   float: right;
   margin-right: 10px;
+  background-color: transparent;
   color: #0c6ebe;
   border: none;
   width: 36px;
@@ -68,21 +70,19 @@ footer p {
   outline: none;
 }
 
-form {
+form.create-note {
   position: relative;
   width: 480px;
   margin: 30px auto 20px auto;
-  background: #fff;
+  background: rgb(29, 29, 29);
   padding: 15px;
   border-radius: 7px;
   box-shadow: 0 1px 5px rgb(138, 137, 137);
-  background: rgb(29, 29, 29);
-  color: rgb(241, 243, 244);
 }
-form input,
-form textarea {
-  background: rgb(29, 29, 29);
+form.create-note input,
+form.create-note textarea {
   color: rgb(241, 243, 244);
+  background-color: rgb(29, 29, 29);
   width: 100%;
   border: none;
   padding: 4px;
@@ -91,7 +91,7 @@ form textarea {
   font-family: inherit;
   resize: none;
 }
-form button {
+form.create-note button {
   position: absolute;
   right: 18px;
   bottom: -18px;
